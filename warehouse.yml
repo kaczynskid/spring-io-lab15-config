@@ -20,12 +20,10 @@ management:
       show-details: "always"
   metrics:
     export:
+      jmx:
+        enabled: false
       graphite:
         enabled: false
-        host: "localhost"
-        port: 2003
-        protocol: "plaintext"
-        step: "5s"
 
 ---
 
