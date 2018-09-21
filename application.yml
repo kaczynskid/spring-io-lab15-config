@@ -18,3 +18,20 @@ eureka:
     prefer-ip-address: true
     health-check-url-path: "/admin/health"
     status-page-url-path: "/admin/info"
+
+ribbon:
+  MaxAutoRetries: 3
+  MaxAutoRetriesNextServer: 1
+  ReadTimeout: 1000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+feign:
+  hystrix:
+    enabled: true
