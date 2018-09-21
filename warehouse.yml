@@ -3,7 +3,7 @@ info:
   company: "Vattenfall"
 
 server:
-  port: 9100
+  port: 0 # 9100
 
 spring:
   jackson:
