@@ -41,7 +41,11 @@ spring:
     baseUrl: "http://localhost:9411/"
   sleuth:
     sampler:
-      percentage: 1.0
-    log:
-      json:
-        enabled: true
+      probability: 1.0
+
+---
+
+spring:
+  rabbitmq:
+    username: "admin"
+    password: "sprio"
